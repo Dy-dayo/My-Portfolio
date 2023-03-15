@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <!-- <img src="images/profile-me.jpeg" alt="My Profile Pic"> -->
+        <h1>D</h1>
+        <!-- <h1>Ojo Oladayo</h1> -->
+        <svg height="32px" id="show-btn" class="open" viewBox="0 0 32 32">
+            <path fill="#0f414d" d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+        </svg>
+    </header>
+    <nav id="nav">
+        <div class="inner-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="close-btn-svg" id="close-btn-svg">
+                <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="#0f414d"/>
+            </svg>
+        </div>
+        <ul>
+            <!-- <li class="selected"><a href="#"></a></li> -->
+            <li id="myProject"><a href="#project">Projects</a></li>
+            <li><a href="#card">Contacts</a></li>
+            <li><a href="mailto:ojooladayo012@gmail.com">Email Me</a></li>
+            <li><a href="#">Visit my Blog</a></li>
+        </ul>
+    </nav>
+    <h4 class="wel">Welcome to my Page <br></h4>
+    <main class="main">
+        <div>
+            
+            <h3>MY NAME IS OJO OLADAYO</h3>
+
+            <p id="my-info">
+                I am a <span id="info">Frontend Engineer</span>
+            </p>
+            <p>
+                I am a passionate frontend developer based in Lagos, Nigeria. My specialities include JavaScript, ReactJs, VueJs and CSS.
+                I enjoy writing about cool stuffs, majorly anything I find interesting. I am a developer committed to honing
+                my skills. It is a major aspect of my daily life to continue learning. I enjoy building project that are useful
+                and well executed. 
+            </p>
+        </div>
+        <section class="stack" id="stack">
+            <h2>Stacks</h2>
+            <div class="js">
+                <img src="images/js.svg" alt="JavaScript logo" class="stack-img">
+                <span>JavaScript</span>
+            </div>
+            <div class="react">
+                <img src="images/react.svg" alt="React logo" class="stack-img">
+                <span>ReactJs</span>
+            </div>
+            <div class="vue">
+                <img src="images/vuejs.svg" alt="VueJs logo" class="stack-img">
+                <span>VueJs</span>
+            </div>
+            <div class="github">
+                <img src="images/github.svg" alt="github logo" class="stack-img">
+                <span>VueJs</span>
+            </div>
+        </section>
+    </main>
+    <section class="project" id="project">
+        <h2>My Projects</h2>
+        <div class="my-project-div" id="my-project-div">
+            <!-- My Projects -->
+
+        </div>
+    </section>
+
+    <div class="card" id="card">
+        <img src="images/profile-me.jpeg" alt="Dayo maintaining a straight face in a picture." class="card-pic" />
+        <div class="card-details">
+            <h3>Ojo Oladayo</h3>
+            <span><strong>Frontend Engineer</strong></span><br>
+            <i>Lagos, Nigeria</i>
+            <address>
+                <span><a href="mailto:ojooladayo012@gmail.com">Gmail<i class="fa-solid fa-mailbox"></i></i></a></span>
+                <span><a href="https://www.linkedin.com/in/oladayo-ojo-9b45581b1" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a></span>
+                <span><a href="https://github.com/Dy-dayo" target="_blank"><i
+                            class="fa-brands fa-github"></i></a></span> <br>
+
+            </address>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <p>(c) Oladayo's Portfolio </p>
+        </div>
+    </footer>
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>

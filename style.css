@@ -1,0 +1,347 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #150c4a;
+}
+
+.contact h4 {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: rgba(144, 144, 144, 0.505);
+    padding: 0 10px;
+}
+header h1{
+    margin: 5px;
+}
+#nav{
+    position: fixed;
+    border-radius:0 0 0 10px;
+    width: 250px;
+    margin-left: auto;
+    right: 0;
+    display: none;
+    /* transition: 400ms; */
+    animation: showIn 500ms linear 10ms 1 normal;
+    background-color:rgba(134, 134, 134, 0.505)
+}
+
+.inner-wrapper{
+    /* border: 1px solid #302d26; */
+    width: 30px;
+    margin-right: 10px;
+    margin-left: auto;
+    margin-bottom: 0;
+}
+.open{
+    margin-left:auto ;
+    transition: 200ms;
+    cursor: pointer;
+}
+.open:hover{
+    transform: scale(1.20);
+    
+}
+.close-btn-svg{
+    width: 100%;
+    cursor: pointer;
+    transition: 200ms;
+}
+.close-btn-svg:hover{
+    transform: scale(1.20);
+    
+}
+nav ul li{
+    padding: 10px 0;
+    border-bottom:1px solid #0f414d;
+    border-radius:0 0 0 10px;
+    /* border: 1px solid red; */
+    margin-bottom: 5px;
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: ivory;
+    re
+}
+
+header,
+main,
+section,
+.guess,
+ .card{
+    padding: 0 10px;
+}
+.wel{
+    height: 35px;
+    transform: scale(20px 35px);
+    transition: 1s;
+    animation:slides 4s linear 100ms infinite normal;
+} 
+main {
+    display: flex;
+    flex-direction: column;
+}
+main div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+ 
+#info{
+    color: #0f414d;
+    font-size: 1.2rem;
+    transition: 400ms;
+}
+#my-info{
+    transition-delay: 500ms;
+    transition-timing-function: linear;
+}
+
+.stack{
+    display: grid;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 25px 35px 100px;
+    grid-template-areas: 
+    'header header header header'
+    'none none none none'
+    'js react vue github';
+    
+}
+.stack h2{
+    grid-area: header;
+    text-align: center;
+}
+.stack .js,
+.stack .react,
+.stack .vue,
+.stack .github{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stack .js{
+    grid-area: js;
+
+}
+.stack .react{
+    grid-area: react;
+}
+.stack .vue{
+    grid-area: vue;
+}
+
+.stack .github{
+    grid-area: github;
+}
+#project{
+    display: none;
+}
+.project h2 {
+    text-align: center;
+}
+.project img{
+    width: 35%;
+    max-width: 200px;
+    border-radius: 8px;
+}
+.stack-img{
+    height: 70px;
+    transition: 500ms;
+}
+.stack-img:hover{
+    transform: skewX(20deg);
+}
+.stack div span{
+    margin-top: 10px;
+    text-align: center;
+    /* height: 25px; */
+
+}
+/* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+.my-project-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 350px;
+    gap: 10px;
+
+
+}
+
+.my-project-div> div {
+    margin-top: 15px;
+    border-radius: 4px;
+    background-color: rgba(134, 134, 134, 0.505);
+    text-align: center;
+    padding: 14px 1rem;
+}
+.contact {
+    display: flex;
+    flex-direction:column ;
+}
+
+
+address {
+    margin-bottom: .8rem;
+    padding: 0px 15px;
+}
+
+.card {
+    display: flex;
+    text-align: center;
+    border-radius: 5px;
+    transition:0.2s ;
+    border-bottom: 8px solid #787878;
+    color: #2c2d36;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:0 auto;
+    width: 90%;
+    height: 200px;
+}
+.card:hover{
+    background-color:rgba(134, 134, 134, 0.505);
+}
+
+.card-pic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+footer{
+    margin-top: 5px;
+    background-color: #2c2d36;
+    color: #bcd9e0;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+@keyframes slides {
+    0%{
+        margin-left: 80%;
+        color: #150c4a;
+    }
+    25%{
+        margin-left: 70%;
+        color: #0f414d;
+    }
+    50%{
+        margin-left: 50%;
+        color: #ec977f;
+    }
+    75%{
+        margin-left: 30%;
+        color: #302d26;
+    }
+    100%{
+        margin-left: 10%;
+        color: #1a1919;
+    }
+    
+}
+
+@keyframes showIn {
+    0%{
+        transform: translate(100%, 0);;
+    }
+    50%{
+        transform: translate(50%, 0);;
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+    
+}
+
+
+@media (max-width:550px) {
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3,
+    h4,
+    h5 {
+        font-size: 1.25rem;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin: .7em auto 4px;
+        line-height: 1.3;
+    }
+
+    p {
+        margin-top: 6px;
+        line-height: 1.3;
+    }
+
+}
+
+
+
+
+@media (min-width:750px) {
+    body {
+        font-size: 1.2rem;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .contact >div {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+    }
+    .stack{
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 35px 35px 150px 150px;
+        grid-template-areas: 
+        'header header'
+        'none none'
+        'js react'
+        'vue github';
+    }
+    .stack-img{
+        height: 80%;
+        /* transition: 500ms; */
+    }
+    .card{
+        width: 450px;
+    }
+   
+}
